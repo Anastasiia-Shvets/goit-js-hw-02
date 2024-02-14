@@ -2,25 +2,11 @@
 function checkForSpam(message) {
     const messageCase = message.toLowerCase();
     if (messageCase.includes("spam") || messageCase.includes("sale")) {
-        return `true`;
+        return true;
     } else {
-        return `false`;
+        return false;
     }
 }
-
-// function checkForSpam(message) {
-//     const blackWord = "spam";
-//     const blackWord2 = "sale";
-//     if (message.toLowerCase().includes(blackWord)) {
-//         return `true`
-//     } else if (message.toLowerCase().includes(blackWord2)) {
-//         return `true`
-//     } else {
-//         return `false`
-//     }
-// }
-
-
 
 
 
